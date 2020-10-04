@@ -22,6 +22,9 @@ class CustomText(models.Model):
 
 class HomePage(models.Model):
     body = models.TextField()
+    content = models.TextField()
+    name = models.CharField()
+    tag = models.CharField()
 
     @property
     def api(self):
@@ -29,4 +32,4 @@ class HomePage(models.Model):
 
     @property
     def field(self):
-        return 'body'
+        return self.body
