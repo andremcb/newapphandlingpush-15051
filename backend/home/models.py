@@ -17,7 +17,7 @@ class CustomText(models.Model):
 
     @property
     def field(self):
-        return 'title'
+        return self.title
 
 
 class HomePage(models.Model):
